@@ -1,4 +1,4 @@
-
+```mermaid
 sequenceDiagram
     autonumber
     participant ECR as ECR 收银机<br/>(PC/手机/收银系统)
@@ -35,3 +35,4 @@ sequenceDiagram
         Note over SVC: 检查交易状态 / 命中幂等缓存
         SVC-->>-ECR: ⑧ 幂等缓存回放 (直接返回上次应答 JSON)
     end
+```
